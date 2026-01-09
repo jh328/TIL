@@ -9,3 +9,15 @@ var reduce = function(nums, fn, init) {
     return val;
 };
 ```
+
+```
+const reduce = (nums,fn,init) => {
+    let answer = init;
+
+    for(const num of nums){
+        answer = fn(answer, num);
+    }
+
+    return answer;
+}
+```
